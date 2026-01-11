@@ -18,14 +18,14 @@ export function ClientsPage() {
     {
       name: 'Priya Tanreja',
       role: 'CEO, Beautify Glow',
-      image: '/assets/c1.jpg',
+      image: '/images/c1.jpg',
       text: 'R&D Software Solutions transformed our digital presence. Their expertise and dedication are unmatched. The team went above and beyond to ensure our project exceeded expectations.',
       rating: 5,
     },
     {
       name: 'Kunal Agarwal',
       role: 'Founder, HappyByte',
-      image: '/assets/c3.jpg',
+      image: '/images/c3.jpg',
       text: 'Working with this team was a game-changer. They delivered beyond our expectations on time and budget. Their professionalism and technical skills are outstanding.',
       rating: 5,
     },

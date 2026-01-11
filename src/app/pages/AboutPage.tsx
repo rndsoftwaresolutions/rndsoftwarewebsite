@@ -74,7 +74,7 @@ export function AboutPage() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30 border border-blue-900/30">
                 <ImageWithFallback
-                  src="/assets/about.png"
+                  src="/images/about.png"
                   alt="Our Team"
                   className="w-full h-auto"
                 />
@@ -201,7 +201,7 @@ export function AboutPage() {
                 <div className="md:col-span-1">
                   <div className="relative w-48 h-48 mx-auto rounded-2xl overflow-hidden border-4 border-blue-500/30">
                     <ImageWithFallback
-                      src="/assets/rakesh.png"
+                      src="/images/Rakesh.png"
                       alt="Rakesh Kumar"
                       className="w-full h-full object-cover"
                     />

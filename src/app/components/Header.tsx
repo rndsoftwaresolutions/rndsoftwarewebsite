@@ -60,22 +60,22 @@ export function Header() {
           <Link to="/" className="flex items-center gap-2 group">
   <div className="relative">
     {/* Glowing Background with Pulse */}
-    <motion.div
-      animate={{ opacity: [0.5, 0.9, 0.5], scale: [1, 1.1, 1] }}
-      transition={{ duration: 2, repeat: Infinity }}
+    {/* <motion.div
+      animate={{ opacity: [0.5, 0.9, 0.5], scale: [1, 0.5, 1] }}
+      transition={{ duration: 10, repeat: Infinity }}
       className="absolute inset-0 bg-blue-500 blur-3xl rounded-full"
-    ></motion.div>
+    ></motion.div> */}
 
     {/* Logo Image */}
     <img
-      src="/assets/logo1.png"
+      src="/images/logo1.png"
       alt="R&D Logo"
-      className="relative w-25 h-20 object-contain rounded-full"
+      className="relative w-30 h-90 object-contain rounded-full"
     />
   </div>
 
   {/* Optional Text */}
-  <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent hidden sm:block">
+  <span className="text-10 font-bold bg-gradient-to-r from-blue-300 to-blue-700 bg-clip-text text-transparent hidden sm:block">
     Software Solutions
   </span>
 </Link>

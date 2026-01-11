@@ -67,13 +67,13 @@ export function HomePage() {
     {
       name: 'Priya Tanreja',
       role: 'CEO, Beautify Glow',
-      image: '/assets/c1.jpg',
+      image: '/images/c1.jpg',
       text: 'R&D Software Solutions transformed our digital presence. Their expertise and dedication are unmatched.',
     },
     {
       name: 'Kunal Agarwal',
       role: 'Founder, HappyByte',
-      image: '/assets/c3.jpg',
+      image: '/images/c3.jpg',
       text: 'Working with this team was a game changer. They delivered beyond our expectations on time and budget.',
     },
     {
@@ -164,7 +164,7 @@ export function HomePage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30 border border-blue-900/30">
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20"></div>
               <ImageWithFallback
-                src="/assets/banner.jpg"
+                src="/images/banner.jpg"
                 alt="Modern Software Development"
                 className="w-full h-auto"
               />
