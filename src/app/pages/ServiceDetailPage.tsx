@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Code2, Smartphone, Database, Search, TrendingUp, Lightbulb, ArrowLeft, CheckCircle } from 'lucide-react';
+import { Code2, Smartphone, Database, Search, TrendingUp, Lightbulb, ArrowLeft, CheckCircle, Layers, BarChart3 } from 'lucide-react';
 
 export function ServiceDetailPage() {
   const { serviceId } = useParams();
@@ -9,46 +9,142 @@ export function ServiceDetailPage() {
     'web-development': {
       icon: Code2,
       title: 'Web Development',
-      overview: 'Transform your digital presence with cutting-edge web solutions. We build responsive, high-performance websites and web applications that drive results and engage users.',
+      overview:
+        'Transform your digital presence with cutting-edge web solutions. We build responsive, high-performance websites and web applications that drive results and engage users.',
       technologies: ['React', 'Next.js', 'Node.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
       benefits: [
-        'Responsive design that works on all devices',
-        'Fast loading times for better user experience',
-        'SEO-optimized structure for better rankings',
-        'Scalable architecture for future growth',
+        'Responsive design for all devices',
+        'Fast loading and optimized performance',
+        'SEO-friendly architecture',
+        'Scalable and future-ready solutions',
         'Secure and reliable infrastructure',
       ],
       process: [
-        { title: 'Discovery', description: 'Understanding your business goals and requirements' },
-        { title: 'Design', description: 'Creating wireframes and visual designs' },
-        { title: 'Development', description: 'Building with latest technologies and best practices' },
-        { title: 'Testing', description: 'Rigorous testing across devices and browsers' },
-        { title: 'Deployment', description: 'Launching your website to production' },
-        { title: 'Support', description: 'Ongoing maintenance and updates' },
+        { title: 'Discovery', description: 'Understanding business goals and requirements' },
+        { title: 'Design', description: 'Wireframes and UI/UX design' },
+        { title: 'Development', description: 'Modern tech stack implementation' },
+        { title: 'Testing', description: 'Cross-browser and device testing' },
+        { title: 'Deployment', description: 'Production launch' },
+        { title: 'Support', description: 'Maintenance and updates' },
       ],
     },
+
     'mobile-app-development': {
       icon: Smartphone,
       title: 'Mobile App Development',
-      overview: 'Create stunning mobile experiences that users love. Our expert team develops native and cross-platform apps for iOS and Android that drive engagement and business growth.',
+      overview:
+        'Build powerful and engaging mobile applications for Android and iOS using modern frameworks and native technologies.',
       technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Firebase', 'AWS'],
       benefits: [
-        'Native performance and user experience',
-        'Cross-platform development for cost efficiency',
-        'Intuitive and engaging user interfaces',
-        'Seamless integration with device features',
-        'Regular updates and maintenance',
+        'Native-like performance',
+        'Cross-platform cost efficiency',
+        'Intuitive user experience',
+        'Secure backend integration',
+        'Ongoing updates and support',
       ],
       process: [
-        { title: 'Ideation', description: 'Refining your app concept and features' },
-        { title: 'UI/UX Design', description: 'Designing user-friendly interfaces' },
-        { title: 'Development', description: 'Building robust and scalable apps' },
-        { title: 'Testing', description: 'Quality assurance on multiple devices' },
-        { title: 'Launch', description: 'Publishing to App Store and Play Store' },
-        { title: 'Growth', description: 'Analytics, updates, and improvements' },
+        { title: 'Ideation', description: 'Feature planning and strategy' },
+        { title: 'UI/UX Design', description: 'Mobile-first user experience design' },
+        { title: 'Development', description: 'Scalable app development' },
+        { title: 'Testing', description: 'Multi-device QA testing' },
+        { title: 'Launch', description: 'App Store & Play Store deployment' },
+        { title: 'Optimization', description: 'Performance and feature improvements' },
+      ],
+    },
+
+    'crm-integration': {
+      icon: Database,
+      title: 'CRM Integration & Development',
+      overview:
+        'Streamline your sales and customer management with custom CRM solutions and seamless third-party CRM integrations.',
+      technologies: ['Node.js', 'React', 'Salesforce API', 'HubSpot API', 'PostgreSQL', 'AWS'],
+      benefits: [
+        'Centralized customer data',
+        'Automated sales workflows',
+        'Improved customer engagement',
+        'Custom dashboards and reports',
+        'Secure data handling',
+      ],
+      process: [
+        { title: 'Requirement Analysis', description: 'Understanding CRM needs' },
+        { title: 'System Design', description: 'Architecture and data flow planning' },
+        { title: 'Integration', description: 'CRM and third-party tool integration' },
+        { title: 'Customization', description: 'Tailored workflows and dashboards' },
+        { title: 'Testing', description: 'Data accuracy and security checks' },
+        { title: 'Deployment', description: 'Go-live and monitoring' },
+      ],
+    },
+
+    'seo-optimization': {
+      icon: TrendingUp,
+      title: 'SEO Optimization',
+      overview:
+        'Boost your online visibility and search rankings with data-driven SEO strategies tailored to your business.',
+      technologies: ['Google Analytics', 'Search Console', 'Ahrefs', 'SEMrush', 'Lighthouse'],
+      benefits: [
+        'Higher search engine rankings',
+        'Increased organic traffic',
+        'Better page performance',
+        'Improved user experience',
+        'Long-term growth results',
+      ],
+      process: [
+        { title: 'SEO Audit', description: 'Website and competitor analysis' },
+        { title: 'Keyword Research', description: 'Targeting high-value keywords' },
+        { title: 'On-Page SEO', description: 'Content and technical optimization' },
+        { title: 'Off-Page SEO', description: 'Backlinks and authority building' },
+        { title: 'Monitoring', description: 'Ranking and traffic tracking' },
+        { title: 'Optimization', description: 'Continuous improvements' },
+      ],
+    },
+
+    'meta-ads-google-ads': {
+      icon: BarChart3,
+      title: 'Meta & Google Ads Management',
+      overview:
+        'Drive targeted traffic and conversions with expertly managed Meta (Facebook & Instagram) and Google ad campaigns.',
+      technologies: ['Google Ads', 'Meta Ads Manager', 'Google Analytics', 'Tag Manager'],
+      benefits: [
+        'Highly targeted campaigns',
+        'Better ROI on ad spend',
+        'Conversion-focused strategy',
+        'Real-time performance tracking',
+        'Scalable ad growth',
+      ],
+      process: [
+        { title: 'Strategy', description: 'Audience and budget planning' },
+        { title: 'Ad Creation', description: 'High-converting creatives and copy' },
+        { title: 'Campaign Setup', description: 'Pixel and tracking configuration' },
+        { title: 'Optimization', description: 'A/B testing and performance tuning' },
+        { title: 'Scaling', description: 'Increasing profitable campaigns' },
+        { title: 'Reporting', description: 'Detailed analytics and insights' },
+      ],
+    },
+
+    'custom-software-solutions': {
+      icon: Layers,
+      title: 'Custom Software Solutions',
+      overview:
+        'Tailor-made software solutions designed specifically to solve your unique business challenges.',
+      technologies: ['Node.js', 'React', 'Next.js', 'Python', 'PostgreSQL', 'AWS'],
+      benefits: [
+        'Fully customized solutions',
+        'Scalable system architecture',
+        'High security standards',
+        'Business-specific automation',
+        'Long-term flexibility',
+      ],
+      process: [
+        { title: 'Consultation', description: 'Understanding business problems' },
+        { title: 'Planning', description: 'Solution architecture and roadmap' },
+        { title: 'Development', description: 'Agile software development' },
+        { title: 'Testing', description: 'Performance and security testing' },
+        { title: 'Deployment', description: 'Production release' },
+        { title: 'Support', description: 'Enhancements and maintenance' },
       ],
     },
   };
+
 
   const service = servicesData[serviceId || 'web-development'] || servicesData['web-development'];
   const ServiceIcon = service.icon;
